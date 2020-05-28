@@ -1,0 +1,49 @@
+<mat-card>
+  <form (submit)="onCreatePost(postForm)" #postForm="ngForm">
+    <mat-form-field>
+      <input
+       matInput
+       type="text"
+       placeholder="title"
+       name="title"
+       ngModel
+       #title="ngModel"
+       required>
+      <mat-error *ngIf="title.invalid">Please enter an album Title, Homie!</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input
+      matInput
+      type="text"
+      placeholder="artist"
+      name="artist"
+      ngModel
+      #artist="ngModel"
+      required>
+      <mat-error *ngIf="artist.invalid">Please enter an artist, Homie!</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input
+      matInput
+      type="text"
+      placeholder="genre"
+      name="genre"
+      ngModel
+      #genre="ngModel"
+      >
+    </mat-form-field>
+    <mat-form-field>
+      <textarea
+      placeholder="notes"
+      matInput rows="3"
+      name="notes"
+      ngModel
+      #content="ngModel">
+        </textarea>
+    </mat-form-field>
+    <button
+    mat-raised-button
+    color="accent"
+    type="submit">save post</button>
+  </form>
+ </mat-card>
