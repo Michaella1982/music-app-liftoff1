@@ -25,6 +25,7 @@ export class CreatePostComponent {
   }
 
    this.postsService.addPost(
+     form.value.id,
      form.value.title,
      form.value.artist,
      form.value.genre,

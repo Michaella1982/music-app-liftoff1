@@ -16,6 +16,7 @@ import { AppComponent } from './app.component';
 import { CreatePostComponent } from './posts/create-post/create-post.component';
 import { HeaderComponent } from './header/header.component';
 import { ListGroupComponent } from './posts/list-group/list-group.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -36,7 +37,8 @@ import { ListGroupComponent } from './posts/list-group/list-group.component';
     MatFormFieldModule,
     MatButtonModule,
     MatToolbarModule,
-    MatExpansionModule
+    MatExpansionModule,
+    HttpClientModule
 
   ],
   providers: [],
