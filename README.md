@@ -1,4 +1,4 @@
-# MusicAppLiftoff1
+# Virtual Crates
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.3.
 
@@ -26,12 +26,12 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-# music-app-liftoff1
+# Outline
 
-## Outline
-I set out to create a mock social networking/logging app. It will allow users to track their collections and purchases, to create, edit and remove posts/collection listings, and to be able to review and edit user information. This application will be beneficial for anyone who wants to keep track of and/or sell their record collections.
+<p>I set out to create a mock social networking/logging app. It will allow users to track their collections and purchases, to create, edit and remove posts/collection listings, and to be able to review and edit user information. This application will be beneficial for anyone who wants to keep track of and/or sell their record collections.</p>
 
-## Features
+# Features
+
 <li>
   <ul>Create a userID, and password</ul>
   <ul>Create a forgot password/edit password capability</ul>
@@ -40,7 +40,8 @@ I set out to create a mock social networking/logging app. It will allow users to
   <ul>users will be able to use a form and database backend to store entries into collection</ul>
   <ul>Create, edit, and remove entries with fields specific to the posts as well as being able to upload pictures</ul>
 </li>
-## App Technologies
+
+# App Technologies
 <li>
   <ul>Angular CLI<ul>
   <ul>Bootstrap4</ul> 
