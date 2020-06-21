@@ -1,5 +1,9 @@
+<h2> Add an album to your collection! </h2>
+
 <mat-card>
+
   <form (submit)="onCreatePost(postForm)" #postForm="ngForm">
+
     <mat-form-field>
       <input
        matInput
@@ -32,11 +36,19 @@
       #genre="ngModel"
       >
     </mat-form-field>
+    <mat-chip-list color="accent">
+      <mat-chip color="accent" >Mint</mat-chip>
+      <mat-chip color="accent">Near Mint</mat-chip>
+      <mat-chip color="accent">Very Good +</mat-chip>
+      <mat-chip color="accent">Very Good </mat-chip>
+      <mat-chip color="accent">Good+</mat-chip>
+      <mat-chip color="accent">Poor/Fair</mat-chip>
+    </mat-chip-list>
     <mat-form-field>
       <textarea
       placeholder="notes"
       matInput rows="3"
-      name="notes"
+      name="content"
       ngModel
       #content="ngModel">
         </textarea>

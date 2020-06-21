@@ -8,6 +8,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatChipsModule } from '@angular/material/chips';
 
 
 
@@ -38,7 +39,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatButtonModule,
     MatToolbarModule,
     MatExpansionModule,
-    HttpClientModule
+    HttpClientModule,
+    MatChipsModule
 
   ],
   providers: [],

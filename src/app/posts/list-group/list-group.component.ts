@@ -9,7 +9,7 @@ import { PostsService } from '../post.service';
   templateUrl: './list-group.component.html',
   styleUrls: ['./list-group.component.scss']
 })
-export class ListGroupComponent implements OnInit, OnDestroy {
+export class ListGroupComponent implements OnInit, OnDestroy{
    posts: Post[] = [];
    private postsSub: Subscription;
 
@@ -23,11 +23,15 @@ export class ListGroupComponent implements OnInit, OnDestroy {
 
     });
    }
+    onDelete(postId: string) {
+      this.postsService.deletePost(postId);
+    }
+
     ngOnDestroy(){
       this.postsSub.unsubscribe();
     }
 
- /* posts = [{
+  /*posts = [{
     title :'The Man Who Sold the World',
     artist: 'David Bowie',
     genre: 'Rock',
@@ -47,7 +51,7 @@ export class ListGroupComponent implements OnInit, OnDestroy {
 
 
 
-  ]*/ //dummy data for testing functionality of accordion^^//
+  ]*dummy data for testing functionality of accordion*/
 
 
 }
